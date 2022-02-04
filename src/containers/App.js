@@ -18,7 +18,7 @@ function App() {
       .then((users) => {
         setRobots(users);
       });
-  });
+  }, []);
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value);
